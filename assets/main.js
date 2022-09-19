@@ -52,6 +52,8 @@ const ul = document.querySelector('.ul')
 
 let pizzaFiltrada = [];
 
+// aca entendi que solo habia que guardar el array entero, por lo que dijeron en la clase el otro dia. o no se si entendi al reves
+
 const saveLocalStorage = pizzaList => {
 localStorage.setItem('Pizzas', JSON.stringify(pizzaList))
 }
@@ -72,6 +74,9 @@ card.innerHTML = `
   <p class="p">${ingredientes}</p>
   <h4 class="h4">A tan solo $${precio}.</h4>
   `
+
+//hubiera preferido hacer una lista que renderice cada elemento li por cada ingrediente pero lo vi tarde y no me dio el tiempo, aun asi no supe bien como hacerlo, por eso el p. 
+
 }
 
 const filtrarID = () => {
